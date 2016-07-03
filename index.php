@@ -16,6 +16,7 @@ function image_filter($path){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>valo phone!</title>
 	<link href="/style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="/valo_phone_icon.png">
 </head>
 <body>
 	<div id="header">
