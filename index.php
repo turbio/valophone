@@ -6,7 +6,8 @@ $images = array_filter($images, image_filter);
 $images = array_reverse($images);
 
 function image_filter($path){
-	return !is_dir($meida_dir . '/' . $path);
+	global $media_dir;
+	return !is_dir($media_dir . '/' . $path);
 }
 ?>
 <!DOCTYPE html>
