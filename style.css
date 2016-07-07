@@ -68,3 +68,18 @@ img{
 	color: #575757;
 	text-decoration: none;
 }
+.single-post{
+	max-width: 80%;
+	display: inline-block;
+	background: #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .25);
+	overflow: hidden;
+	margin: .5em;
+}
+#back-link{
+	font-size: 2em;
+
+	display: block;
+	text-decoration: none;
+	color: #444;
+}

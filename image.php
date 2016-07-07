@@ -1,15 +1,3 @@
-<?php
-$media_dir = './media';
-$images = scandir($media_dir);
-
-$images = array_filter($images, image_filter);
-$images = array_reverse($images);
-
-function image_filter($path){
-	global $media_dir;
-	return !is_dir($media_dir . '/' . $path);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +18,11 @@ function image_filter($path){
 		</a>
 	</div>
 	<div id="posts">
+		<a id="back-link" href="/">back</a>
 <?php
-foreach($images as $image){
-	echo "<div class=\"post\"><a href=\"/image.php?src=$image\"><img src=\"$media_dir/$image\"></a></div>";
-}
+$media_dir = './media';
+$image = $_GET['src'];
+echo "<div class=\"single-post\"><img src=\"$media_dir/$image\"></div>";
 ?>
 	</div>
 </body>
